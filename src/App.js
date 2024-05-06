@@ -1,11 +1,10 @@
-import "./App.css";
-
+import React from "react";
+import Menu from "./Component/Navbar/Navbar";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Hello World</header>
-    </div>
+    <>
+      <Menu />
+    </>
   );
 }
-
 export default App;
