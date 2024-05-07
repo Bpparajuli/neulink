@@ -1,5 +1,4 @@
 import React from "react";
-import Sales from "../Sales/Sales";
 import "./dashboard.css";
 const Dashboard = () => {
   return (

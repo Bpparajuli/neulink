@@ -1,0 +1,43 @@
+.sales-table {
+  width: 98%;
+  margin: 10px;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+.sales-table tr {
+  border: 1px solid #ddd;
+}
+
+.sales-table th,
+.sales-table td {
+  padding: 5px;
+  text-align: center;
+}
+
+.sales-table th {
+  background-color: #f2f2f2;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  border: 1px solid black;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+}
+
+.quantity-control input[type="number"] {
+  width: 50px;
+  margin: auto;
+  align-items: center;
+  border: none;
+}
+
+.discount {
+  border: none;
+  text-align: center;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import SearchBox from "../Search/SearchBox.jsx";
 import { Route, Routes } from "react-router-dom";
 import "./navbar.css";
@@ -15,6 +15,8 @@ import Patients from "../Patients/Patients.jsx";
 import Insurance from "../Insurance/Insurance.jsx";
 
 const Menu = () => {
+  const location = useLocation();
+
   return (
     <>
       <div className="menu">
@@ -23,25 +25,39 @@ const Menu = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="menu-item">
-              <Nav.Link>
+              <Nav.Link
+                className={location.pathname === "/overview" ? "active" : ""}
+              >
                 <Link to="/overview">Overview</Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link
+                className={location.pathname === "/sales" ? "active" : ""}
+              >
                 <Link to="/sales">Sales</Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link
+                className={location.pathname === "/inventory" ? "active" : ""}
+              >
                 <Link to="/inventory">Inventory</Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link
+                className={location.pathname === "/reports" ? "active" : ""}
+              >
                 <Link to="/reports">Reports</Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link
+                className={location.pathname === "/suppliers" ? "active" : ""}
+              >
                 <Link to="/suppliers">Suppliers</Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link
+                className={location.pathname === "/patients" ? "active" : ""}
+              >
                 <Link to="/patients">Patients</Link>
               </Nav.Link>
-              <Nav.Link>
+              <Nav.Link
+                className={location.pathname === "/insurance" ? "active" : ""}
+              >
                 <Link to="/insurance">Insurance</Link>
               </Nav.Link>
             </Nav>

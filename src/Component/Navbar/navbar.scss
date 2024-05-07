@@ -31,15 +31,18 @@
   margin-left: 20px;
   margin-right: auto;
 }
-
+.menu-item .active {
+  background-color: white;
+  border-radius: 5px;
+  margin: 3px;
+}
+.menu-item .active a {
+  color: black;
+}
 .nav-link a {
   color: #6d6d6d;
   text-decoration: none;
   transition: color 0.2s ease;
   font-weight: 600;
   margin: 0 5px;
-}
-
-.nav-link a:hover {
-  color: rgb(7, 114, 25);
 }
