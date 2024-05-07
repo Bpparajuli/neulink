@@ -33,18 +33,20 @@ const Patients = () => {
         <hr />
         <div className="sale-title updt">
           <div className="check-clmn">
-            <div>
-              <h1>Product List</h1>
-            </div>
-            <div className="inputButton">
-              <input
-                type="text"
-                placeholder="Search for Product| Enter Bar Code| Scan Barcode"
-              />
-              <button className="clear">Clear</button>
-            </div>
-            <div>
-              <button className="removeAll">Remove All</button>
+            <div className="mid-row">
+              <div>
+                <h1>Product List</h1>
+              </div>
+              <div className="inputButton">
+                <input
+                  type="text"
+                  placeholder="Search for Product| Enter Bar Code| Scan Barcode"
+                />
+                <button className="clear">Clear</button>
+              </div>
+              <div>
+                <button className="removeAll">Remove All</button>
+              </div>
             </div>
             <div className="clmn">
               <SalesTable />
