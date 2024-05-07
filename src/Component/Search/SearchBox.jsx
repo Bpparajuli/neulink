@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import SearchResult from "./SearchResult";
 import "./searchbox.css";
-const SearchBar = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+const SearchBox = () => {
   const [data, setData] = useState("");
   const handleSearch = () => {
     const input = document.querySelector('input[type="text"]');
@@ -9,12 +11,16 @@ const SearchBar = () => {
   };
   return (
     <>
-      <input type="text" placeholder="search anything" />
-      <button onClick={handleSearch} className="btn btn-outline-primary">
-        Search
-      </button>
+      <div className="search-box">
+        <input type="text" placeholder="search..." />
+        <button onClick={handleSearch}>
+          <icon>
+            <FontAwesomeIcon icon={faArrowRightFromBracket} />{" "}
+          </icon>
+        </button>
+      </div>
       <div>{data === "" ? null : <SearchResult name={data} />}</div>
     </>
   );
 };
-export default SearchBar;
+export default SearchBox;

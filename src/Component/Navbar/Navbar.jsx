@@ -18,11 +18,11 @@ const Menu = () => {
   return (
     <>
       <div className="menu">
-        <Navbar bg="light" expand="lg">
+        <Navbar className="navbar">
           <Navbar.Brand href="/">#</Navbar.Brand>
-          <Navbar.Toggle bg="dark" aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto">
+            <Nav className="menu-item">
               <Nav.Link>
                 <Link to="/overview">Overview</Link>
               </Nav.Link>
@@ -44,10 +44,10 @@ const Menu = () => {
               <Nav.Link>
                 <Link to="/insurance">Insurance</Link>
               </Nav.Link>
-              <Nav.Link>
-                <SearchBox />
-              </Nav.Link>
             </Nav>
+            <Nav.Link>
+              <SearchBox />
+            </Nav.Link>
           </Navbar.Collapse>
         </Navbar>
       </div>

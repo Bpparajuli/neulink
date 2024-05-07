@@ -1,1 +1,30 @@
-/*# sourceMappingURL=searchbox.css.map */
+.search-box {
+  padding: 5px;
+}
+
+.search-box input {
+  padding: 5px;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.search-box button {
+  background-color: #eeeeee;
+  color: black;
+  border: none;
+  margin: 0px 10px;
+  padding: 5px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search-box button:hover {
+  background-color: #ee8080;
+  color: wheat;
+}
+
+.logout {
+  color: black;
+}/*# sourceMappingURL=searchbox.css.map */

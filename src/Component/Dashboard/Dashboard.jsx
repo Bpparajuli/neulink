@@ -4,7 +4,6 @@ import "./dashboard.css";
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <Sales />
       <h1> Dashboard</h1>
     </div>
   );
