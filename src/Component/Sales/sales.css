@@ -120,7 +120,7 @@
 
 .inputButton {
   border: 1px solid #bbbbbb;
-  width: 65%;
+  width: 60%;
   border-radius: 5px;
 }
 
@@ -136,52 +136,4 @@
 .removeAll:hover {
   background-color: rgb(143, 143, 143);
   color: black;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
-  padding-bottom: 2px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-left {
-  padding: 5px;
-  background-color: #ebebeb;
-}
-
-.footer-left,
-.footer-right {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-up,
-.footer-down {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-}
-
-.footer-left > .footer-down,
-.footer-right > .footer-down {
-  margin-top: auto;
-}
-
-.footer-left > .footer-up > div,
-.footer-right > .footer-up > div,
-.footer-left > .footer-down > div,
-.footer-right > .footer-down > div {
-  margin-right: 30px;
-}
-
-.footer-right > .footer-up button,
-.footer-right > .footer-down button {
-  border: 1px solid rgb(196, 196, 196);
-  margin: 5px;
-  border-radius: 5px;
 }/*# sourceMappingURL=sales.css.map */

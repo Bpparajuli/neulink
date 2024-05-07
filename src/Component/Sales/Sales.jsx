@@ -1,13 +1,7 @@
 import React from "react";
 import "./sales.css";
 import SalesTable from "../SalesTable/SalesTable";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCreditCard } from "@fortawesome/free-solid-svg-icons/faCreditCard";
-import {
-  faMobile,
-  faPause,
-  faSackDollar,
-} from "@fortawesome/free-solid-svg-icons";
+import Footer from "../Footer/footer";
 
 const Sales = () => {
   return (
@@ -19,15 +13,15 @@ const Sales = () => {
           <button className="addsale-button">+ Add Sales</button>
           <button className="insurance-button">
             Insurance Sale
-            <label for="toggle-button" class="toggle-button">
+            <label for="toggle-button" className="toggle-button">
               <input type="checkbox" id="toggle-button" />
-              <span class="toggle-switch"></span>
+              <span className="toggle-switch"></span>
             </label>
           </button>
         </div>
+        <hr></hr>
         <div className="sale-title">
           <div>
-            {" "}
             <h1>Product List</h1>
           </div>
           <div className="inputButton">
@@ -44,52 +38,7 @@ const Sales = () => {
         </div>
         <div>
           <SalesTable />
-        </div>
-        <div className="footer">
-          <div className="footer-left">
-            <div className="footer-up">
-              <div>
-                <h6>
-                  Co pay: <span style={{ fontWeight: "400" }}> AED 0.00</span>
-                </h6>
-              </div>
-              <div>
-                <h6>
-                  Discount: <span style={{ fontWeight: "400" }}> AED 0.00</span>
-                </h6>
-              </div>
-              <div>
-                <h6>
-                  Net Amount:{" "}
-                  <span style={{ fontWeight: "400" }}> AED 0.00</span>
-                </h6>
-              </div>
-            </div>
-            <div className="footer-down" style={{ fontWeight: "600" }}>
-              <div>Total Amount:</div>
-              <div>AED 0.00</div>
-            </div>
-          </div>
-          <div className="footer-right">
-            <div className="footer-up">
-              <button>
-                <FontAwesomeIcon icon={faCreditCard} /> Continue with Card
-              </button>
-              <button>
-                <FontAwesomeIcon icon={faSackDollar} />
-                Continue with Cash
-              </button>
-            </div>
-            <div className="footer-down">
-              <button>
-                {" "}
-                <FontAwesomeIcon icon={faMobile} /> Online Pay
-              </button>
-              <button>
-                <FontAwesomeIcon icon={faPause} /> Hold Purchase
-              </button>
-            </div>
-          </div>
+          <Footer />
         </div>
       </div>
     </>
